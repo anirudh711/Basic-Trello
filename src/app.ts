@@ -174,7 +174,7 @@ class ProjectList extends Component<HTMLDivElement, HTMLElement> {
         if (this.type === "active") {
           return prj.status === ProjectStatus.Active;
         }
-        prj.status === ProjectStatus.Finished;
+        return  prj.status === ProjectStatus.Finished;
       });
       this.assignedProjects = relevantProjects;
       this.renderProjects();
